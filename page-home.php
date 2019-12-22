@@ -7,7 +7,7 @@ get_header(); ?>
 
 <div class="wrapper">
 	<div class="posts-wrapper">
-		<?php query_posts('cat=3&posts_per_page=-1'); while (have_posts()) : the_post(); ?>
+		<?php query_posts('cat=2&posts_per_page=-1'); while (have_posts()) : the_post(); ?>
 
 		<?php $value = get_field('thumbnail_2');
 			if( $value ) {
@@ -22,7 +22,7 @@ get_header(); ?>
 					if( !empty($thumbnail_1) ): ?>
 						<img src="<?php echo $thumbnail_1['url']; ?>" alt="<?php echo $thumbnail_1['alt']; ?>" />
 					<?php endif; ?>
-					
+
 					<?php $thumbnail_2 = get_field('thumbnail_2');
 					if( !empty($thumbnail_2) ): ?>
 						<img src="<?php echo $thumbnail_2['url']; ?>" alt="<?php echo $thumbnail_2['alt']; ?>" />
