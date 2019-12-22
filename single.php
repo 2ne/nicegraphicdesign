@@ -12,10 +12,10 @@ get_header(); ?>
 			<div class="wrapper">
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php if(in_category('3')) {
+					<?php if(in_category('work')) {
 						get_template_part( 'template-parts/content', 'single-work' );
 					}
-					elseif(in_category('4')) {
+					elseif(in_category('blog')) {
 						get_template_part( 'template-parts/content', 'single-blog' );
 					}
 					else {

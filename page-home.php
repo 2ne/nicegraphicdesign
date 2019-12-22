@@ -7,7 +7,7 @@ get_header(); ?>
 
 <div class="wrapper">
 	<div class="posts-wrapper">
-		<?php query_posts('cat=2&posts_per_page=-1'); while (have_posts()) : the_post(); ?>
+		<?php query_posts('category_name=work&posts_per_page=-1'); while (have_posts()) : the_post(); ?>
 
 		<?php $value = get_field('thumbnail_2');
 			if( $value ) {

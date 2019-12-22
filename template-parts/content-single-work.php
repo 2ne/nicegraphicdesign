@@ -99,7 +99,7 @@
 
 	<div class="posts-wrapper">
 		<?php
-				$query = 'cat=3&posts_per_page=-1';
+				$query = 'category_name=work&posts_per_page=-1';
 				$queryObject = new WP_Query($query);
 				// The Loop...
 				if ($queryObject->have_posts()) {
